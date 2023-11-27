@@ -1,0 +1,38 @@
+.error {
+    display: flex;
+    position: absolute;
+    left: calc(50% - 85px);
+    width: 170px;
+    height: 27px;
+    padding: 2px 4px;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px -3px #111;
+    opacity: 0;
+    transform: translatey(-80%);
+    transition: all 0.3s ease;
+}
+
+.error__icon {
+    width: 20px;
+    height: 20px;
+    transform: translateY(-2px);
+    margin-right: 8px;
+}
+
+.error__icon path {
+    fill: #fff;
+}
+
+.error__title {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+
+.show.error {
+    background: #ff0000;
+    opacity: 1;
+    transform: translateY(0);
+}
