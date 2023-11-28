@@ -5,6 +5,13 @@ p {
   text-shadow: 0 0 10px rgb(0, 106, 173), 0 0 10px rgb(0, 92, 148);
 }
 
+h4{
+  max-width: 200px;
+  text-align: center;
+  color: #01478c;
+  font-size: 14px;
+  font-weight: 500;
+}
 
 .wrapper {
   width: 200px;
