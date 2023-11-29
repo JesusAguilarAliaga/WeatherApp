@@ -22,3 +22,10 @@
     box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
     background-color: white;
 }
+
+@media (width < 600px) {
+    .input {
+        min-width: 300px;
+        height: 40px;
+    }
+}

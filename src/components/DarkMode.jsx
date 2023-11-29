@@ -1,20 +1,19 @@
 import "../styles/DarkMode.css"
 
-const DarkMode = ({handleSwitch, setFilter}) => {
+const DarkMode = ({isDay, setDay}) => {
 
-  const newFilter = () => {
-    if(handleSwitch == "none") setFilter("brightness(0.5)")
-    if(handleSwitch == "brightness(0.5)") setFilter("none")
+  const handleOpacity = () => {
+    if(isDay == "n") setDay("d")
+    if(isDay == "d") setDay("n")
   }
 
-
   return (
-    <>
+    <div className="containerSwitch">
       <label className="switch">
         <input type="checkbox" />
-        <span className="slider" onClick={newFilter}></span>
+        <span className="slider" onClick={handleOpacity}></span>
       </label>
-    </>
+    </div>
   )
 }
 export default DarkMode

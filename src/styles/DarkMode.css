@@ -1,10 +1,16 @@
 /* The switch - the box around the slider */
+.containerSwitch {
+    position: absolute;
+    top: 50px;
+}
+
+
 .switch {
-    font-size: 11px;
+    font-size: 13px;
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 21px;
+    width: 50px;
+    height: 24px;
 }
 
 /* Hide default HTML checkbox */
@@ -30,7 +36,7 @@
     content: "";
     height: 1.4em;
     width: 1.4em;
-    right: 5px;
+    right: 6px;
     bottom: 3px;
     transform: translateX(150%);
     background-color: #4580ba;
@@ -43,7 +49,7 @@
     content: "";
     height: 1.4em;
     width: 1.4em;
-    left: 5px;
+    left: 6px;
     bottom: 3px;
     background-color: rgba(83, 56, 143, 1);
     ;
@@ -61,4 +67,17 @@
 
 .switch input:checked+.slider::after {
     transform: translateX(-150%);
+}
+
+
+@media (width < 600px) {
+    .containerSwitch {
+        top: 20px;
+    }
+
+    .switch {
+        font-size: 14px;
+        width: 55px;
+        height: 26px;
+    }
 }
